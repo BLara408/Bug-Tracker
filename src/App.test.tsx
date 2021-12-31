@@ -14,5 +14,6 @@ test('it creates a new bug', () =>{
   const inputElement = screen.getByTestId('newBugDescription');
   userEvent.type(inputElement, 'test bug');
   fireEvent.click(screen.getByTestId('addButton'));
+  
   expect(screen.getByText(/Add New Bug/i)).toBeInTheDocument();
 });
