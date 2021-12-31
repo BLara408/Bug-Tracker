@@ -26,7 +26,7 @@ function App() {
       newBug
     ]);
     setNewBugDescription('');
-    setNewBugPriority('Medium');
+    setNewBugPriority('Low');
 
   };
 
@@ -47,7 +47,7 @@ function App() {
         <label htmlFor='newBugPiority'>
           New Bug Priority
         </label>
-        <select id = "newBugPriority"  value = {newBugPriority} onChange={event => (event.target.value)}>
+        <select id = "newBugPriority"  value = {newBugPriority} onChange={event => setNewBugPriority(event.target.value)}>
           <option value = 'Low'> Low</option>
           <option value = 'Medium'> Medium</option>
           <option value = 'High'> High</option>
