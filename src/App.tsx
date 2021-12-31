@@ -1,6 +1,6 @@
 import React, { FormEvent } from 'react';
 import { useState } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import { BugPriority, IBug } from './IBug';
 import {v4 as uuid} from 'uuid';
